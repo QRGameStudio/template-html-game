@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Every game needs following:  -->
+    <!--  - it's name  -->
+    <title>The Name Of The Game</title>
+    <!--  - it's id  -->
+    <meta name="gi" content="unique.id.of.this.game">
+    <!--  - it's version (1.20 > 1.2.1 > 1.2 > 1)  -->
+    <meta name="gv" content="version.of.this.game">
+
+    <!--  Optional parameters are:   -->
+    <!--  - it's secret that is required when auto updating to the newest version from the player -->
+    <!--                when no secret is specified, then none is needed when updating-->
+    <meta name="gs" content="8 UPPER CASE CHARACTERS">
+    <!--  - it's auto update status, can be auto/manual/none, whereas auto is default  -->
+    <meta name="gu" content="auto">
+
+    <!-- Import default source files -->
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script src="game.js"></script>
+
+    <!-- Make the game mobile friendly -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Place your game into the game-layer, because the body is modified by the player (e. g. adding footer) -->
+<div id="game-layer">
+    <!-- Layer provides auto scrolling when game-content is overflowing  -->
+    <div id="game-content">
+        <!--  Here goes your game's HTML  -->
+    </div>
+</div>
+
+</body>
+</html>
